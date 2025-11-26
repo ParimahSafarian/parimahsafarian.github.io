@@ -140,7 +140,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll(
-        '.timeline-item, .project-card, .skill-item, .about-text, .about-image'
+        '.timeline-item, .project-card, .skill-item, .about-text, .about-image, .hobby-card, .education-item, .achievement-item'
     );
     
     animateElements.forEach(el => {
@@ -155,7 +155,10 @@ style.textContent = `
     .project-card,
     .skill-item,
     .about-text,
-    .about-image {
+    .about-image,
+    .hobby-card,
+    .education-item,
+    .achievement-item {
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.6s ease, transform 0.6s ease;
@@ -167,7 +170,7 @@ style.textContent = `
     }
     
     .nav-link.active {
-        color: #667eea !important;
+        color: #0ea5e9 !important;
     }
     
     .nav-link.active::after {
